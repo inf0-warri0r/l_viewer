@@ -1,0 +1,97 @@
+l_viewer - a simple L-system viewer
+==========================
+
+pre-requirements
+-----------------
+
+this script is writen in python. install 'python' and 'Tkinter'
+to run the script. (use synaptic package manager in Ubuntu
+to install them)
+
+how to run
+-----------
+
+to run the applicaion we need a text file containing the
+L-system information. the format of the file is like this.
+
+axiom
+starting angle
+angle
+number of rulse
+rule1
+rule2
+......
+......
+number of symbols with actions
+symble1=action1,action2
+symbol2=action3
+......
+......
+
+you only have to mension the symbols(variables & constances) with actions 
+in here. actions avilable are,
+
+L - turn left
+R - turn right
+P - push
+O - pop
+F - move forword
+
+example1:
+
+XY
+0.0
+90.0
+2
+X=X+YF
+Y=FX-Y
+3
++=L
+-=R
+F=F
+
+example2:
+
+0
+0.0
+45.0
+2
+1=11
+0=1[0]0
+4
+[=P,L
+]=O,R
+0=F
+1=F
+
+there are few info files supplied with the application.
+
+then use fallowing commnand to run the application
+
+python viewer.py
+
+then you need to load the info file. use load button to do it.
+the press start. you can move around and zoom the view but pause
+befoure doing that. and try to do the moving and zooming when
+it is in gone only 4 or 5 genarations.
+
+more inf0:
+-----------
+
+	tcg.galahena@gmail.com
+	http://www.inf0warri0r.blogspot.com
+
+licenses:
+----------
+
+     Copyright 2012 Tharindra Galahena
+
+This is free software: you can redistribute it and/or modify it under the terms of 
+the GNU General Public License as published by the Free Software Foundation, either 
+version 3 of the License, or any later version. This is distributed in the hope 
+that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General 
+Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this. 
+If not, see http://www.gnu.org/licenses/. 

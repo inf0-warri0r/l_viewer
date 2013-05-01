@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 Author : tharindra galahena (inf0_warri0r)
 Project: l_viewer
@@ -20,25 +22,11 @@ this. If not, see http://www.gnu.org/licenses/.
 
 """
 
+import display
 
-class stack:
+if __name__ == '__main__':
 
-    def __init__(self):
-        self.lst = list()
-        self.count = 0
-        self.top = -1
-
-    def push(self, t):
-        self.lst.append(t)
-        self.count = self.count + 1
-        self.top = self.top + 1
-
-    def pop(self):
-        if self.count <= 0:
-            return 0
-        t = self.lst[self.top]
-        self.lst.remove(t)
-        self.count = self.count - 1
-        self.top = self.top - 1
-        return t
-
+    app = display.Application()
+    app.master.title('l_viewer')
+    app.mainloop()
+s
