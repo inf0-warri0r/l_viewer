@@ -4,20 +4,20 @@ l_viewer - a simple L-system viewer
 pre-requirements
 -----------------
 
-this script is writen in python. install 'python' and 'Tkinter'
+this script is written in python. install 'python' and 'Tkinter'
 to run the script. (use synaptic package manager in Ubuntu
 to install them)
 
 how to run
 -----------
 
-to run the applicaion we need a text file containing the
+to run the application we need a text file containing the
 L-system information. the format of the file is like this.
 
 axiom
 starting angle
 angle
-number of rulse
+number of rules
 rule1
 rule2
 ......
